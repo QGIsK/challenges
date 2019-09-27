@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,600i&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  background: no-repeat center/cover url("../images/bg-pattern-desktop.svg");
+}
+
+.content {
+  padding: 10% 25%;
+}
+
+.content > .header {
+  line-height: 1.1;
+  font-size: 5rem;
+  margin-top: 30%;
+  text-transform: uppercase;
+}
+
+.content > .header > .tag {
+  display: block;
+  color: hsl(0, 36%, 70%);
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.content > .description {
+  margin: 5% 0;
+  align-items: left;
+  padding-right: 18%;
+  line-height: 2;
+  font-size: 1rem;
+  color: hsl(0, 36%, 70%);
+}
+
+.model {
+  background: no-repeat center/cover url("../images/hero-desktop.jpg");
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid rgba(65, 58, 58, 0.1);
+  border-radius: 5rem;
+}
+
+input {
+  flex-grow: 2;
+  border: none;
+  background: none;
+}
+
+input::placeholder {
+  color: #ce9797;
+}
+
+button {
+  width: 5.7rem;
+  height: 3.2rem;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: none;
+  border-radius: 80px;
+  color: white;
+  font-size: 1.5rem;
+  min-width: 4.5rem;
+  min-height: 3rem;
+}
+
+button:hover {
+  -webkit-box-shadow: 0px 9px 15px -2px rgba(206, 151, 151, 1);
+  -moz-box-shadow: 0px 9px 15px -2px rgba(206, 151, 151, 1);
+  box-shadow: 0px 9px 15px -2px rgba(206, 151, 151, 1);
+  transform: scale(1.1);
+}
+
+.email {
+  padding-left: 2rem;
+  font-size: 1rem;
+  color: hsl(0, 6%, 24%);
+}
